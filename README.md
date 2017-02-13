@@ -1,6 +1,13 @@
 # HoTT2Duplex
 Arduino sketch for converting telemetry data from Graupner HoTT sensors to Jeti Duplex EX
 
-Required libraries:
-[HoTTClient](https://github.com/Made4RC/HoTTClient)
-[JetiExSensorCppLib](https://sourceforge.net/projects/jetiexsensorcpplib/)
+### Required hardware:
+* Arduino Pro Mini 328, 16Mhz, 5V
+* 2x resistor 1k5 to 4k7 Ohm (SMD 0805 fits perfect)
+
+### Wiring
+![HoTT2Duplex wiring](https://github.com/Made4RC/HoTT2Duplex/blob/master/HoTT2Duplex%20Wiring.png?raw=true)
+
+### Required libraries:
+* [HoTTClient](https://github.com/Made4RC/HoTTClient)
+* [JetiExSensorCppLib](https://sourceforge.net/projects/jetiexsensorcpplib/)
