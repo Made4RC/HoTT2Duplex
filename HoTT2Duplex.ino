@@ -649,7 +649,7 @@ void HandleMenu()
 	switch( _nMenu ) {
 		case 0: 
 			jetiEx.SetJetiboxText( JetiExProtocol::LINE1, "= HoTT2Duplex =" );
-			jetiEx.SetJetiboxText( JetiExProtocol::LINE2, "  Version 0.1  " );
+			jetiEx.SetJetiboxText( JetiExProtocol::LINE2, "  Version 0.2  " );
 			break;
 /*
 		case 1: 
