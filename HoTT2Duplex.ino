@@ -91,96 +91,90 @@ enum
 };
 
 // EAM
-JetiSensor *sensors_eam[] = {
-/* NOT YET TESTED
-//                  id                      name               unit        data type             precision 0->0, 1->0.0, 2->0.00
-	new JetiSensor( ID_EAM_CAPACITY,        "Capacity",        "mAh",      JetiSensor::TYPE_22b, 0 ),
-	new JetiSensor( ID_EAM_CURRENT,         "Current",         "A",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_EAM_VOLTAGE_1,       "Voltage 1",       "V",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_EAM_VOLTAGE_2,       "Voltage 2",       "V",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_EAM_MAIN_VOLTAGE,    "Main voltage",    "V",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_1,  "Cell 1 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_2,  "Cell 2 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_3,  "Cell 3 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_4,  "Cell 4 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_5,  "Cell 5 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_6,  "Cell 6 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_7,  "Cell 7 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_8,  "Cell 8 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_9,  "Cell 9 voltage",  "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_10, "Cell 10 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_11, "Cell 11 voltage", "V",	       JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_12, "Cell 12 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_13, "Cell 13 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_CELL_VOLTAGE_14, "Cell 14 voltage", "V",	       JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_EAM_ALTITUDE,        "Rel. altitude",   "m",	       JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_EAM_CLIMBRATE,       "Vario",           "m/s",      JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_EAM_TEMPERATURE_1,   "Temperature 1",   "\xB0\x43", JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_EAM_TEMPERATURE_2,   "Temperature 2",   "\xB0\x43", JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_EAM_RPM,             "RPM",             "/min",     JetiSensor::TYPE_22b, 1 ),
-*/
+JETISENSOR_CONST sensors_eam[] PROGMEM = {
+//    id                      name               unit        data type             precision 0->0, 1->0.0, 2->0.00
+	{ ID_EAM_CAPACITY,        "Capacity",        "mAh",      JetiSensor::TYPE_22b, 0 },
+	{ ID_EAM_CURRENT,         "Current",         "A",        JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_VOLTAGE_1,       "Voltage 1",       "V",        JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_VOLTAGE_2,       "Voltage 2",       "V",        JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_MAIN_VOLTAGE,    "Main voltage",    "V",        JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_CELL_VOLTAGE_1,  "Cell 1 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_2,  "Cell 2 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_3,  "Cell 3 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_4,  "Cell 4 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_5,  "Cell 5 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_6,  "Cell 6 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_7,  "Cell 7 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_8,  "Cell 8 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_9,  "Cell 9 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_10, "Cell 10 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_11, "Cell 11 voltage", "V",	     JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_12, "Cell 12 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_13, "Cell 13 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_14, "Cell 14 voltage", "V",	     JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_ALTITUDE,        "Rel. altitude",   "m",	     JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_CLIMBRATE,       "Vario",           "m/s",      JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_TEMPERATURE_1,   "Temperature 1",   "\xB0\x43", JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_TEMPERATURE_2,   "Temperature 2",   "\xB0\x43", JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_RPM,             "RPM",             "/min",     JetiSensor::TYPE_22b, 1 },
 	0 // end of array
 };
 
 // GAM
-JetiSensor *sensors_gam[] = {
-/* NOT YET TESTED
-//                  id                      name              unit        data type             precision 0->0, 1->0.0, 2->0.00
-	new JetiSensor( ID_GAM_CAPACITY,        "Capacity",       "mAh",      JetiSensor::TYPE_22b, 0 ),
-	new JetiSensor( ID_GAM_CURRENT,         "Current", 	      "A",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_GAM_VOLTAGE_1,       "Voltage 1",      "V",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_GAM_VOLTAGE_2,       "Voltage 2", 	  "V",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_GAM_MAIN_VOLTAGE,    "Main voltage",   "V",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_GAM_CELL_VOLTAGE_1,  "Cell 1 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_GAM_CELL_VOLTAGE_2,  "Cell 2 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_GAM_CELL_VOLTAGE_3,  "Cell 3 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_GAM_CELL_VOLTAGE_4,  "Cell 4 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_GAM_CELL_VOLTAGE_5,  "Cell 5 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_GAM_CELL_VOLTAGE_6,  "Cell 6 voltage", "V",        JetiSensor::TYPE_14b, 2 ),
-	new JetiSensor( ID_GAM_ALTITUDE,        "Rel. altitude",  "m",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_GAM_CLIMBRATE,       "Vario",          "m/s",      JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_GAM_FUEL_PERCENTAGE, "Fuel percent",   "%",        JetiSensor::TYPE_14b, 0 ),
-	new JetiSensor( ID_GAM_FUEL,            "Fuel",           "ml",       JetiSensor::TYPE_22b, 1 ),
-	new JetiSensor( ID_GAM_TEMPERATURE_1,   "Temperature 1",  "\xB0\x43", JetiSensor::TYPE_14b, 0 ),
-	new JetiSensor( ID_GAM_TEMPERATURE_2,   "Temperature 2",  "\xB0\x43", JetiSensor::TYPE_14b, 0 ),
-	new JetiSensor( ID_GAM_RPM,             "RPM", 	          "/min",     JetiSensor::TYPE_22b, 0 ),
-*/
+JETISENSOR_CONST sensors_gam[] PROGMEM = {
+//    id                      name              unit        data type             precision 0->0, 1->0.0, 2->0.00
+	{ ID_GAM_CAPACITY,        "Capacity",       "mAh",      JetiSensor::TYPE_22b, 0 },
+	{ ID_GAM_CURRENT,         "Current", 	    "A",        JetiSensor::TYPE_14b, 1 },
+	{ ID_GAM_VOLTAGE_1,       "Voltage 1",      "V",        JetiSensor::TYPE_14b, 1 },
+	{ ID_GAM_VOLTAGE_2,       "Voltage 2", 	    "V",        JetiSensor::TYPE_14b, 1 },
+	{ ID_GAM_MAIN_VOLTAGE,    "Main voltage",   "V",        JetiSensor::TYPE_14b, 1 },
+	{ ID_GAM_CELL_VOLTAGE_1,  "Cell 1 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_GAM_CELL_VOLTAGE_2,  "Cell 2 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_GAM_CELL_VOLTAGE_3,  "Cell 3 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_GAM_CELL_VOLTAGE_4,  "Cell 4 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_GAM_CELL_VOLTAGE_5,  "Cell 5 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_GAM_CELL_VOLTAGE_6,  "Cell 6 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_GAM_ALTITUDE,        "Rel. altitude",  "m",        JetiSensor::TYPE_14b, 1 },
+	{ ID_GAM_CLIMBRATE,       "Vario",          "m/s",      JetiSensor::TYPE_14b, 1 },
+	{ ID_GAM_FUEL_PERCENTAGE, "Fuel percent",   "%",        JetiSensor::TYPE_14b, 0 },
+	{ ID_GAM_FUEL,            "Fuel",           "ml",       JetiSensor::TYPE_22b, 1 },
+	{ ID_GAM_TEMPERATURE_1,   "Temperature 1",  "\xB0\x43", JetiSensor::TYPE_14b, 0 },
+	{ ID_GAM_TEMPERATURE_2,   "Temperature 2",  "\xB0\x43", JetiSensor::TYPE_14b, 0 },
+	{ ID_GAM_RPM,             "RPM", 	        "/min",     JetiSensor::TYPE_22b, 0 },
 	0 // end of array
 };
 
 // GPS
-JetiSensor *sensors_gps[] = {
-/* NOT YET TESTED
-//                  id                                name               unit    data type             precision 0->0, 1->0.0, 2->0.00
-	new JetiSensor( ID_GPS_ALTITUDE,                  "Rel. altitude",   "m",    JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_GPS_CLIMBRATE,                 "Vario",           "m/s",  JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_GPS_SPEED,                     "Speed",           "km/h", JetiSensor::TYPE_14b, 0 ),
-	new JetiSensor( ID_GPS_DISTANCE,                  "Distance",        "m",    JetiSensor::TYPE_22b, 1 ),
-	new JetiSensor( ID_GPS_DIRECTION,                 "Direction",       "\xB0", JetiSensor::TYPE_14b, 0 ),
-	new JetiSensor( ID_GPS_LOGITUDE_START_POSITION,   "Log. start pos.", "-",    JetiSensor::TYPE_GPS, 0 ),
-	new JetiSensor( ID_GPS_LATITUDE_START_POSITION,   "Lat. start pos.", "-",    JetiSensor::TYPE_GPS, 0 ),
-	new JetiSensor( ID_GPS_LOGITUDE_CURRENT_POSITION, "Log. curr. pos.", "-",    JetiSensor::TYPE_GPS, 0 ),
-	new JetiSensor( ID_GPS_LATITUDE_CURRENT_POSITION, "Lat. curr. pos.", "-",    JetiSensor::TYPE_GPS, 0 ),
-*/
-  0 // end of array
+JETISENSOR_CONST sensors_gps[] PROGMEM = {
+//    id                                name               unit    data type             precision 0->0, 1->0.0, 2->0.00
+	{ ID_GPS_ALTITUDE,                  "Rel. altitude",   "m",    JetiSensor::TYPE_14b, 1 },
+	{ ID_GPS_CLIMBRATE,                 "Vario",           "m/s",  JetiSensor::TYPE_14b, 1 },
+	{ ID_GPS_SPEED,                     "Speed",           "km/h", JetiSensor::TYPE_14b, 0 },
+	{ ID_GPS_DISTANCE,                  "Distance",        "m",    JetiSensor::TYPE_22b, 1 },
+	{ ID_GPS_DIRECTION,                 "Direction",       "\xB0", JetiSensor::TYPE_14b, 0 },
+	{ ID_GPS_LOGITUDE_START_POSITION,   "Log. start pos.", "-",    JetiSensor::TYPE_GPS, 0 },
+	{ ID_GPS_LATITUDE_START_POSITION,   "Lat. start pos.", "-",    JetiSensor::TYPE_GPS, 0 },
+	{ ID_GPS_LOGITUDE_CURRENT_POSITION, "Log. curr. pos.", "-",    JetiSensor::TYPE_GPS, 0 },
+	{ ID_GPS_LATITUDE_CURRENT_POSITION, "Lat. curr. pos.", "-",    JetiSensor::TYPE_GPS, 0 },
+	0 // end of array
 };
 
 // VARIO
-JetiSensor *sensors_vario[] = {
-//                  id                  name             unit    data type             precision 0->0, 1->0.0, 2->0.00
-	new JetiSensor( ID_VARIO_ALTITUDE,  "Rel. altitude", "m",	 JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_VARIO_CLIMBRATE, "Vario", 		 "m/s",  JetiSensor::TYPE_14b, 1 ),
+JETISENSOR_CONST sensors_vario[] PROGMEM = {
+//    id                  name             unit   data type             precision 0->0, 1->0.0, 2->0.00
+	{ ID_VARIO_ALTITUDE,  "Rel. altitude", "m",	  JetiSensor::TYPE_14b, 1 },
+	{ ID_VARIO_CLIMBRATE, "Vario", 		   "m/s", JetiSensor::TYPE_14b, 1 },
     0 // end of array
 };
 
 // AIR-ESC
-JetiSensor *sensors_airesc[] = {
-//                  id                         name            unit        data type             precision 0->0, 1->0.0, 2->0.00
-	new JetiSensor( ID_AIRESC_CAPACITY,        "Capacity",     "mAh",      JetiSensor::TYPE_22b, 0 ),
-	new JetiSensor( ID_AIRESC_CURRENT,         "Current", 	   "A",        JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_AIRESC_MAIN_VOLTAGE,	   "Main voltage", "V",	       JetiSensor::TYPE_14b, 1 ),
-	new JetiSensor( ID_AIRESC_ESC_TEMPERATURE, "ESC Temp.",    "\xB0\x43", JetiSensor::TYPE_14b, 0 ),
-	new JetiSensor( ID_AIRESC_RPM,             "RPM", 		   "/min",     JetiSensor::TYPE_22b, 0 ),
+JETISENSOR_CONST sensors_airesc[] PROGMEM = {
+//    id                         name            unit        data type             precision 0->0, 1->0.0, 2->0.00
+	{ ID_AIRESC_CAPACITY,        "Capacity",     "mAh",      JetiSensor::TYPE_22b, 0 },
+	{ ID_AIRESC_CURRENT,         "Current", 	 "A",        JetiSensor::TYPE_14b, 1 },
+	{ ID_AIRESC_MAIN_VOLTAGE,	 "Main voltage", "V",	     JetiSensor::TYPE_14b, 1 },
+	{ ID_AIRESC_ESC_TEMPERATURE, "ESC Temp.",    "\xB0\x43", JetiSensor::TYPE_14b, 0 },
+	{ ID_AIRESC_RPM,             "RPM", 		 "/min",     JetiSensor::TYPE_22b, 0 },
 	0 // end of array
 };
 
@@ -201,14 +195,20 @@ void setup() {
 			sensorType = HOTT_AIRESC_MODULE_ID;
 			jetiEx.Start( "HoTT ESC", sensors_airesc );			
 		} else if (sensor.probe(HOTT_ELECTRIC_AIR_MODULE_ID)) {
+/* NOT YET TESTED
 			sensorType = HOTT_ELECTRIC_AIR_MODULE_ID;
 			jetiEx.Start( "HoTT EAM", sensors_eam );			
+*/
 		} else if (sensor.probe(HOTT_GENERAL_AIR_MODULE_ID)) {
+/* NOT YET TESTED
 			sensorType = HOTT_GENERAL_AIR_MODULE_ID;
 			jetiEx.Start( "HoTT GAM", sensors_gam );			
+*/
 		} else if (sensor.probe(HOTT_GPS_MODULE_ID)) {
+/* NOT YET TESTED
 			sensorType = HOTT_GPS_MODULE_ID;
 			jetiEx.Start( "HoTT GPS", sensors_gps );			
+*/
 		} else if (sensor.probe(HOTT_VARIO_MODULE_ID)) {
 			sensorType = HOTT_VARIO_MODULE_ID;
 			jetiEx.Start( "HoTT Vario", sensors_vario );			
@@ -226,7 +226,6 @@ void loop() {
 	if (sensor.poll(sensorType)) {
 		switch (sensorType) {
 			case HOTT_ELECTRIC_AIR_MODULE_ID:
-/* NOT YET TESTED
 				jetiEx.SetSensorValue( ID_EAM_CAPACITY, sensor.capacity );
 				jetiEx.SetSensorValue( ID_EAM_CURRENT, sensor.current );
 				jetiEx.SetSensorValue( ID_EAM_VOLTAGE_1, sensor.voltage1 );
@@ -251,10 +250,8 @@ void loop() {
 				jetiEx.SetSensorValue( ID_EAM_TEMPERATURE_1, sensor.temperature1 );
 				jetiEx.SetSensorValue( ID_EAM_TEMPERATURE_2, sensor.temperature2 );
 				jetiEx.SetSensorValue( ID_EAM_RPM, sensor.rpm );
-*/
 				break;
 			case HOTT_GENERAL_AIR_MODULE_ID:
-/* NOT YET TESTED
 				jetiEx.SetSensorValue( ID_GAM_CAPACITY, sensor.capacity );
 				jetiEx.SetSensorValue( ID_GAM_CURRENT, sensor.current );
 				jetiEx.SetSensorValue( ID_GAM_VOLTAGE_1, sensor.voltage1 );
@@ -278,10 +275,8 @@ void loop() {
  				jetiEx.SetSensorValue( ID_GAM_MAIN_VOLTAGE, sensor.mainVoltage );
  				jetiEx.SetSensorValue( ID_GAM_TEMPERATURE_1, sensor.temperature1 );
  				jetiEx.SetSensorValue( ID_GAM_RPM, sensor.rpm );
-*/
 				break;
 			case HOTT_GPS_MODULE_ID:
-/* NOT YET TESTED
 				jetiEx.SetSensorValue( ID_GPS_ALTITUDE, sensor.altitude * 10 );
 				jetiEx.SetSensorValue( ID_GPS_CLIMBRATE, sensor.climbRate );
 				jetiEx.SetSensorValue( ID_GPS_SPEED, sensor.speed );
@@ -291,7 +286,6 @@ void loop() {
 				jetiEx.SetSensorValue( ID_GPS_LATITUDE_START_POSITION, sensor.latitudeStartPosition );
 				jetiEx.SetSensorValue( ID_GPS_LOGITUDE_CURRENT_POSITION, sensor.logitudeCurrentPosition );
 				jetiEx.SetSensorValue( ID_GPS_LATITUDE_CURRENT_POSITION, sensor.latitudeCurrentPosition );
-*/
 				break;
 			case HOTT_VARIO_MODULE_ID:
 				jetiEx.SetSensorValue( ID_VARIO_ALTITUDE, sensor.altitude * 10 );
