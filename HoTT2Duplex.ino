@@ -108,11 +108,11 @@ JETISENSOR_CONST sensors_eam[] PROGMEM = {
 	{ ID_EAM_CELL_VOLTAGE_8,  "Cell 8 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
 	{ ID_EAM_CELL_VOLTAGE_9,  "Cell 9 voltage",  "V",        JetiSensor::TYPE_14b, 2 },
 	{ ID_EAM_CELL_VOLTAGE_10, "Cell 10 voltage", "V",        JetiSensor::TYPE_14b, 2 },
-	{ ID_EAM_CELL_VOLTAGE_11, "Cell 11 voltage", "V",	     JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_CELL_VOLTAGE_11, "Cell 11 voltage", "V",        JetiSensor::TYPE_14b, 2 },
 	{ ID_EAM_CELL_VOLTAGE_12, "Cell 12 voltage", "V",        JetiSensor::TYPE_14b, 2 },
 	{ ID_EAM_CELL_VOLTAGE_13, "Cell 13 voltage", "V",        JetiSensor::TYPE_14b, 2 },
-	{ ID_EAM_CELL_VOLTAGE_14, "Cell 14 voltage", "V",	     JetiSensor::TYPE_14b, 2 },
-	{ ID_EAM_ALTITUDE,        "Rel. altitude",   "m",	     JetiSensor::TYPE_14b, 1 },
+	{ ID_EAM_CELL_VOLTAGE_14, "Cell 14 voltage", "V",        JetiSensor::TYPE_14b, 2 },
+	{ ID_EAM_ALTITUDE,        "Rel. altitude",   "m",        JetiSensor::TYPE_14b, 1 },
 	{ ID_EAM_CLIMBRATE,       "Vario",           "m/s",      JetiSensor::TYPE_14b, 1 },
 	{ ID_EAM_TEMPERATURE_1,   "Temperature 1",   "\xB0\x43", JetiSensor::TYPE_14b, 1 },
 	{ ID_EAM_TEMPERATURE_2,   "Temperature 2",   "\xB0\x43", JetiSensor::TYPE_14b, 1 },
@@ -140,7 +140,7 @@ JETISENSOR_CONST sensors_gam[] PROGMEM = {
 	{ ID_GAM_FUEL,            "Fuel",           "ml",       JetiSensor::TYPE_22b, 1 },
 	{ ID_GAM_TEMPERATURE_1,   "Temperature 1",  "\xB0\x43", JetiSensor::TYPE_14b, 0 },
 	{ ID_GAM_TEMPERATURE_2,   "Temperature 2",  "\xB0\x43", JetiSensor::TYPE_14b, 0 },
-	{ ID_GAM_RPM,             "RPM", 	        "/min",     JetiSensor::TYPE_22b, 0 },
+	{ ID_GAM_RPM,             "RPM",            "/min",     JetiSensor::TYPE_22b, 0 },
 	0 // end of array
 };
 
@@ -163,7 +163,7 @@ JETISENSOR_CONST sensors_gps[] PROGMEM = {
 JETISENSOR_CONST sensors_vario[] PROGMEM = {
 //    id                  name             unit   data type             precision 0->0, 1->0.0, 2->0.00
 	{ ID_VARIO_ALTITUDE,  "Rel. altitude", "m",	  JetiSensor::TYPE_14b, 1 },
-	{ ID_VARIO_CLIMBRATE, "Vario", 		   "m/s", JetiSensor::TYPE_14b, 1 },
+	{ ID_VARIO_CLIMBRATE, "Vario",         "m/s", JetiSensor::TYPE_14b, 1 },
     0 // end of array
 };
 
@@ -171,10 +171,10 @@ JETISENSOR_CONST sensors_vario[] PROGMEM = {
 JETISENSOR_CONST sensors_airesc[] PROGMEM = {
 //    id                         name            unit        data type             precision 0->0, 1->0.0, 2->0.00
 	{ ID_AIRESC_CAPACITY,        "Capacity",     "mAh",      JetiSensor::TYPE_22b, 0 },
-	{ ID_AIRESC_CURRENT,         "Current", 	 "A",        JetiSensor::TYPE_14b, 1 },
-	{ ID_AIRESC_MAIN_VOLTAGE,	 "Main voltage", "V",	     JetiSensor::TYPE_14b, 1 },
+	{ ID_AIRESC_CURRENT,         "Current",      "A",        JetiSensor::TYPE_14b, 1 },
+	{ ID_AIRESC_MAIN_VOLTAGE,    "Main voltage", "V",	     JetiSensor::TYPE_14b, 1 },
 	{ ID_AIRESC_ESC_TEMPERATURE, "ESC Temp.",    "\xB0\x43", JetiSensor::TYPE_14b, 0 },
-	{ ID_AIRESC_RPM,             "RPM", 		 "/min",     JetiSensor::TYPE_22b, 0 },
+	{ ID_AIRESC_RPM,             "RPM",          "/min",     JetiSensor::TYPE_22b, 0 },
 	0 // end of array
 };
 
@@ -344,7 +344,7 @@ void HandleMenu()
 	switch( _nMenu ) {
 		case 0: 
 			jetiEx.SetJetiboxText( JetiExProtocol::LINE1, "= HoTT2Duplex =" );
-			jetiEx.SetJetiboxText( JetiExProtocol::LINE2, "  Version 0.3  " );
+			jetiEx.SetJetiboxText( JetiExProtocol::LINE2, "  Version 0.4  " );
 			break;
 /*
 		case 1: 
