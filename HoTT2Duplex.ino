@@ -67,8 +67,6 @@ enum
 	ID_GPS_SPEED,
 	ID_GPS_DISTANCE,
 	ID_GPS_DIRECTION,
-	ID_GPS_LOGITUDE_START_POSITION,
-	ID_GPS_LATITUDE_START_POSITION,
 	ID_GPS_LOGITUDE_CURRENT_POSITION,
 	ID_GPS_LATITUDE_CURRENT_POSITION,
 };
@@ -152,8 +150,6 @@ JETISENSOR_CONST sensors_gps[] PROGMEM = {
 	{ ID_GPS_SPEED,                     "Speed",           "km/h", JetiSensor::TYPE_14b, 0 },
 	{ ID_GPS_DISTANCE,                  "Distance",        "m",    JetiSensor::TYPE_22b, 1 },
 	{ ID_GPS_DIRECTION,                 "Direction",       "\xB0", JetiSensor::TYPE_14b, 0 },
-	{ ID_GPS_LOGITUDE_START_POSITION,   "Log. start pos.", "-",    JetiSensor::TYPE_GPS, 0 },
-	{ ID_GPS_LATITUDE_START_POSITION,   "Lat. start pos.", "-",    JetiSensor::TYPE_GPS, 0 },
 	{ ID_GPS_LOGITUDE_CURRENT_POSITION, "Log. curr. pos.", "-",    JetiSensor::TYPE_GPS, 0 },
 	{ ID_GPS_LATITUDE_CURRENT_POSITION, "Lat. curr. pos.", "-",    JetiSensor::TYPE_GPS, 0 },
 	0 // end of array
@@ -282,8 +278,6 @@ void loop() {
 				jetiEx.SetSensorValue( ID_GPS_SPEED, sensor.speed );
 				jetiEx.SetSensorValue( ID_GPS_DISTANCE, sensor.distance );
 				jetiEx.SetSensorValue( ID_GPS_DIRECTION, sensor.direction );
-				jetiEx.SetSensorValue( ID_GPS_LOGITUDE_START_POSITION, sensor.logitudeStartPosition );
-				jetiEx.SetSensorValue( ID_GPS_LATITUDE_START_POSITION, sensor.latitudeStartPosition );
 				jetiEx.SetSensorValue( ID_GPS_LOGITUDE_CURRENT_POSITION, sensor.logitudeCurrentPosition );
 				jetiEx.SetSensorValue( ID_GPS_LATITUDE_CURRENT_POSITION, sensor.latitudeCurrentPosition );
 				break;
