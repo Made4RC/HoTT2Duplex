@@ -162,7 +162,7 @@ JETISENSOR_CONST sensors_gps[] PROGMEM = {
 // VARIO
 JETISENSOR_CONST sensors_vario[] PROGMEM = {
 //    id                  name             unit   data type             precision 0->0, 1->0.0, 2->0.00
-	{ ID_VARIO_ALTITUDE,  "Rel. altitude", "m",	  JetiSensor::TYPE_14b, 1 },
+	{ ID_VARIO_ALTITUDE,  "Rel. altitude", "m",   JetiSensor::TYPE_14b, 1 },
 	{ ID_VARIO_CLIMBRATE, "Vario",         "m/s", JetiSensor::TYPE_14b, 1 },
     0 // end of array
 };
@@ -172,7 +172,7 @@ JETISENSOR_CONST sensors_airesc[] PROGMEM = {
 //    id                         name            unit        data type             precision 0->0, 1->0.0, 2->0.00
 	{ ID_AIRESC_CAPACITY,        "Capacity",     "mAh",      JetiSensor::TYPE_22b, 0 },
 	{ ID_AIRESC_CURRENT,         "Current",      "A",        JetiSensor::TYPE_14b, 1 },
-	{ ID_AIRESC_MAIN_VOLTAGE,    "Main voltage", "V",	     JetiSensor::TYPE_14b, 1 },
+	{ ID_AIRESC_MAIN_VOLTAGE,    "Main voltage", "V",        JetiSensor::TYPE_14b, 1 },
 	{ ID_AIRESC_ESC_TEMPERATURE, "ESC Temp.",    "\xB0\x43", JetiSensor::TYPE_14b, 0 },
 	{ ID_AIRESC_RPM,             "RPM",          "/min",     JetiSensor::TYPE_22b, 0 },
 	0 // end of array
