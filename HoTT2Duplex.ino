@@ -227,20 +227,20 @@ void loop() {
 				jetiEx.SetSensorValue( ID_EAM_VOLTAGE_1, sensor.voltage1 );
 				jetiEx.SetSensorValue( ID_EAM_VOLTAGE_2, sensor.voltage2 );
 				jetiEx.SetSensorValue( ID_EAM_MAIN_VOLTAGE, sensor.mainVoltage );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_1, sensor.cellVoltage1 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_2, sensor.cellVoltage2 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_3, sensor.cellVoltage3 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_4, sensor.cellVoltage4 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_5, sensor.cellVoltage5 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_6, sensor.cellVoltage6 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_7, sensor.cellVoltage7 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_8, sensor.cellVoltage8 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_9, sensor.cellVoltage9 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_10, sensor.cellVoltage10 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_11, sensor.cellVoltage11 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_12, sensor.cellVoltage12 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_13, sensor.cellVoltage13 );
-				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_14, sensor.cellVoltage14 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_1, sensor.cellVoltage1 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_2, sensor.cellVoltage2 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_3, sensor.cellVoltage3 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_4, sensor.cellVoltage4 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_5, sensor.cellVoltage5 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_6, sensor.cellVoltage6 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_7, sensor.cellVoltage7 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_8, sensor.cellVoltage8 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_9, sensor.cellVoltage9 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_10, sensor.cellVoltage10 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_11, sensor.cellVoltage11 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_12, sensor.cellVoltage12 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_13, sensor.cellVoltage13 * 100 );
+				jetiEx.SetSensorValue( ID_EAM_CELL_VOLTAGE_14, sensor.cellVoltage14 * 100 );
 				jetiEx.SetSensorValue( ID_EAM_ALTITUDE, sensor.altitude * 10 );	// 
 				jetiEx.SetSensorValue( ID_EAM_CLIMBRATE, sensor.climbRate );
 				jetiEx.SetSensorValue( ID_EAM_TEMPERATURE_1, sensor.temperature1 );
@@ -253,12 +253,12 @@ void loop() {
 				jetiEx.SetSensorValue( ID_GAM_VOLTAGE_1, sensor.voltage1 );
 				jetiEx.SetSensorValue( ID_GAM_VOLTAGE_2, sensor.voltage2 );
 				jetiEx.SetSensorValue( ID_GAM_MAIN_VOLTAGE, sensor.mainVoltage );
-				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_1, sensor.cellVoltage1 );
-				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_2, sensor.cellVoltage2 );
-				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_3, sensor.cellVoltage3 );
-				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_4, sensor.cellVoltage4 );
-				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_5, sensor.cellVoltage5 );
-				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_6, sensor.cellVoltage6 );
+				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_1, sensor.cellVoltage1 * 100 );
+				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_2, sensor.cellVoltage2 * 100 );
+				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_3, sensor.cellVoltage3 * 100 );
+				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_4, sensor.cellVoltage4 * 100 );
+				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_5, sensor.cellVoltage5 * 100 );
+				jetiEx.SetSensorValue( ID_GAM_CELL_VOLTAGE_6, sensor.cellVoltage6 * 100 );
 				jetiEx.SetSensorValue( ID_GAM_ALTITUDE, sensor.altitude * 10 );
 				jetiEx.SetSensorValue( ID_GAM_CLIMBRATE, sensor.climbRate );
 				jetiEx.SetSensorValue( ID_GAM_FUEL_PERCENTAGE, sensor.fuelPercentage );
@@ -338,7 +338,7 @@ void HandleMenu()
 	switch( _nMenu ) {
 		case 0: 
 			jetiEx.SetJetiboxText( JetiExProtocol::LINE1, "= HoTT2Duplex =" );
-			jetiEx.SetJetiboxText( JetiExProtocol::LINE2, "  Version 0.5  " );
+			jetiEx.SetJetiboxText( JetiExProtocol::LINE2, "  Version 0.6  " );
 			break;
 /*
 		case 1: 
