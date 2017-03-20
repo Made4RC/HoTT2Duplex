@@ -11,3 +11,6 @@ Arduino sketch for converting telemetry data from Graupner HoTT sensors to Jeti 
 ### Required libraries:
 * [HoTTClient](https://github.com/Made4RC/HoTTClient)
 * [JetiExSensorCppLib](https://sourceforge.net/projects/jetiexsensorcpplib/)
+
+HoTT is a trademark of Graupner/SJ GmbH
+Duplex is a trademark of JETI model s.r.o.
