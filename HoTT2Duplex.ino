@@ -196,10 +196,8 @@ void setup() {
 			jetiEx.Start( "HoTT EAM", sensors_eam );			
 */
 		} else if (sensor.probe(HOTT_GENERAL_AIR_MODULE_ID)) {
-/* NOT YET TESTED
 			sensorType = HOTT_GENERAL_AIR_MODULE_ID;
 			jetiEx.Start( "HoTT GAM", sensors_gam );			
-*/
 		} else if (sensor.probe(HOTT_GPS_MODULE_ID)) {
 /* NOT YET TESTED
 			sensorType = HOTT_GPS_MODULE_ID;
@@ -338,7 +336,7 @@ void HandleMenu()
 	switch( _nMenu ) {
 		case 0: 
 			jetiEx.SetJetiboxText( JetiExProtocol::LINE1, "= HoTT2Duplex =" );
-			jetiEx.SetJetiboxText( JetiExProtocol::LINE2, "  Version 0.6  " );
+			jetiEx.SetJetiboxText( JetiExProtocol::LINE2, "  Version 0.7  " );
 			break;
 /*
 		case 1: 
