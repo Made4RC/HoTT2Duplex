@@ -20,10 +20,10 @@ Right side shows connection to Jeti reciever.
 |Graupner Nr. |Name |Supported |Status |
 |---|---|---|---|
 |33601|Vario Module|Yes|working|
-|S8437|GPS/VARIO Module|Yes, but commented out||
-|33718.SH|BRUSHLESS CONTROL SBEC + T, 18 A, SH Empfängerstecker|Yes||
-|33718.SC|BRUSHLESS CONTROL SBEC + T, 18 A, SC Empfängerstecker|Yes||
-|33718|BRUSHLESS CONTROL SBEC + T, 18 A, JR Empfängerstecker|Yes||
+|S8437|GPS/VARIO Module|Yes|working|
+|33718.SH|BRUSHLESS CONTROL SBEC + T, 18 A, SH Empfängerstecker|Yes|working|
+|33718.SC|BRUSHLESS CONTROL SBEC + T, 18 A, SC Empfängerstecker|Yes|working|
+|33718|BRUSHLESS CONTROL SBEC + T, 18 A, JR Empfängerstecker|Yes|working|
 |33735|BRUSHLESS CONTROL + T T35 und G3,5 Stecker|Yes|working|
 |33735.G2|BRUSHLESS CONTROL + T T35, G2 Stecker|Yes|working|
 |33754.G2|BRUSHLESS CONTROL + T 45 G2|Yes|working|
