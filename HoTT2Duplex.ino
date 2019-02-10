@@ -274,8 +274,8 @@ void loop() {
 				jetiEx.SetSensorValue( ID_GPS_SPEED, sensor.speed );
 				jetiEx.SetSensorValue( ID_GPS_DISTANCE, sensor.distance );
 				jetiEx.SetSensorValue( ID_GPS_DIRECTION, sensor.direction );
-				jetiEx.SetSensorValue( ID_GPS_LOGITUDE_CURRENT_POSITION, sensor.logitudeCurrentPosition );
-				jetiEx.SetSensorValue( ID_GPS_LATITUDE_CURRENT_POSITION, sensor.latitudeCurrentPosition );
+				jetiEx.SetSensorValueGPS( ID_GPS_LOGITUDE_CURRENT_POSITION, true, sensor.logitudeCurrentPosition );
+				jetiEx.SetSensorValueGPS( ID_GPS_LATITUDE_CURRENT_POSITION, false, sensor.latitudeCurrentPosition );
 				break;
 			case HOTT_VARIO_MODULE_ID:
 				jetiEx.SetSensorValue( ID_VARIO_ALTITUDE, sensor.altitude * 10 );
